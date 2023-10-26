@@ -8,9 +8,9 @@ Make sure you have chromedriver installed:
 Setup PATH variable to the location where you unzip the zip file(where chromedriver.exe is present)
     Check if PATH Variable set successfully by using command "chromedriver.exe --version" (If cmd prompt was already open before making changes to Environment Variable close and reopen it)
 
-Run webpage.py by using command "python webpage.py"
+Run webpage.py by using command "python server.py"
 
-Run Selenium tests by using command "python seltest.py"
+Run Selenium tests by using command "python sel.py"
     It has 3 tests:
         test_signup: For using dummy username and password to check signup functionality
         test_signin: For using actual username and password to check signin functionality
