@@ -2,20 +2,22 @@
 <html>
 <head>
     <title>Login</title>
-</head>
+</head>x
 <body>
+    <div class="login-container">
     <h1>Login</h1>
     {% if error %}
         <p style="color: red;">{{ error }}</p>
     {% endif %}
-    <form method="POST" action="/">
+    <form method="POST" action="/" class="login-form">
         <label>Username:</label>
-        <input type="text" name="username"><br><br>
+        <input type="text" name="username" placeholder="Enter your username"><br><br>
         <label>Password:</label>
-        <input type="password" name="password"><br><br>
+        <input type="password" name="password" placeholder="Enter your password"><br><br>
         <input type="submit" value="Login">
     </form>
     <br>
     <a href="/signup">Don't have an account? Sign up here</a>
+   </div> 
 </body>
 </html>
