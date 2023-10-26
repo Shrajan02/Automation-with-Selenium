@@ -2,13 +2,69 @@
 <html>
 <head>
     <title>Login</title>
-</head>x
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f2f2f2;
+        }
+
+        .login-container {
+            width: 300px;
+            padding: 40px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .login-container h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        .login-form {
+            margin-top: 30px;
+        }
+
+        .login-form input[type="text"],
+        .login-form input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .login-form input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            border: none;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .login-form input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        .login-form p {
+            text-align: center;
+            margin-top: 15px;
+        }
+    </style>
+</head>
 <body>
     <div class="login-container">
-    <h1>Login</h1>
-    {% if error %}
+    <h1>Login Page</h1>
+    <!-- {% if error %}
         <p style="color: red;">{{ error }}</p>
-    {% endif %}
+    {% endif %} -->
     <form method="POST" action="/" class="login-form">
         <label>Username:</label>
         <input type="text" name="username" placeholder="Enter your username"><br><br>
