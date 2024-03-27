@@ -1,4 +1,4 @@
-# SE_EXP_11
+# Selenium Automation
 Install requirements by using command "pip install -r requirements.txt"
 
 Make sure you have chromedriver installed:
